@@ -29,7 +29,9 @@ preheader: We would love for you to join our organization! Use the link below to
                             <x-body-text>
                               This invitation was sent to you by
                               <strong>@{{ inviter }}</strong> (via
-                              <strong>@{{ inviterEmail }}</strong>).
+                              <a class="text-sky-500" href="mailto:@{{ inviterEmail }}"
+                                ><strong>@{{ inviterEmail }}</strong></a
+                              >).
                             </x-body-text>
 
                             <x-body-text>
@@ -40,18 +42,11 @@ preheader: We would love for you to join our organization! Use the link below to
                               >Simply click the button below to accept your invitation and join the
                               team</x-body-text
                             >
-                            <x-spacer height="10px" />
+                            <x-spacer height="16px" />
                             <x-button target="_blank" href="@{{ link }}"
                               >Accept invitation</x-button
                             >
-                            <x-spacer height="10px" />
-                            <x-body-text>
-                              If you're having trouble clicking the button above, you can also copy
-                              and paste the following URL into your web browser
-                            </x-body-text>
-                            <x-body-text>
-                              <a href="@{{ link }}" class="text-blue-500 underline">@{{ link }}</a>
-                            </x-body-text>
+                            <x-spacer height="16px" />
                             <x-body-text>
                               Thanks,
                               <br />
@@ -60,7 +55,7 @@ preheader: We would love for you to join our organization! Use the link below to
                             <x-divider />
                             <x-body-text>
                               If you have any questions, please don't hesitate to contact us at
-                              <a href="mailto:{{ company.email }}" class="text-blue-500 underline"
+                              <a href="mailto:{{ company.email }}" class="text-sky-500 underline"
                                 >{{ company.email }}</a
                               >
                             </x-body-text>

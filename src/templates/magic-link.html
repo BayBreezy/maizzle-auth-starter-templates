@@ -4,7 +4,7 @@ preheader: Your Magic Link is now ready. use it to log into your account immedia
 ---
 
 <x-main>
-  <div class="font-inter bg-white text-gray-800">
+  <div class="font-inter">
     <table align="center" class="m-0 mx-auto">
       <tr>
         <td class="w-[550px] max-w-full sm:px-3 px-0">
@@ -29,18 +29,11 @@ preheader: Your Magic Link is now ready. use it to log into your account immedia
                               If you did not initiate this request, please ignore this email.
                               Otherwise, you can sign in by clicking the button below.
                             </x-body-text>
-                            <x-spacer height="10px" />
+                            <x-spacer height="16px" />
                             <x-button target="_blank" href="@{{ link }}"
                               >Log into your account</x-button
                             >
-                            <x-spacer height="10px" />
-                            <x-body-text>
-                              If you're having trouble clicking the button above, copy and paste the
-                              following URL into your web browser
-                            </x-body-text>
-                            <x-body-text>
-                              <a href="@{{ link }}" class="text-blue-500 underline">@{{ link }}</a>
-                            </x-body-text>
+                            <x-spacer height="16px" />
                             <x-body-text>
                               Thanks,
                               <br />
@@ -49,7 +42,7 @@ preheader: Your Magic Link is now ready. use it to log into your account immedia
                             <x-divider />
                             <x-body-text>
                               If you have any questions, please don't hesitate to contact us at
-                              <a href="mailto:{{ company.email }}" class="text-blue-500 underline"
+                              <a href="mailto:{{ company.email }}" class="text-sky-500 underline"
                                 >{{ company.email }}</a
                               >
                             </x-body-text>

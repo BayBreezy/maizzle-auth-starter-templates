@@ -4,7 +4,7 @@ preheader: We heard that you would like to verify your account. Let us help you 
 ---
 
 <x-main>
-  <div class="font-inter bg-white text-gray-800">
+  <div class="font-inter">
     <table align="center" class="m-0 mx-auto">
       <tr>
         <td class="w-[550px] max-w-full sm:px-3 px-0">
@@ -30,18 +30,11 @@ preheader: We heard that you would like to verify your account. Let us help you 
                               email. Otherwise, you can verify your account by clicking the button
                               below.
                             </x-body-text>
-                            <x-spacer height="10px" />
+                            <x-spacer height="16px" />
                             <x-button target="_blank" href="@{{ link }}"
                               >Verify your account</x-button
                             >
-                            <x-spacer height="10px" />
-                            <x-body-text>
-                              If you're having trouble clicking the "Verify your account" button,
-                              copy and paste the following URL into your web browser
-                            </x-body-text>
-                            <x-body-text>
-                              <a href="@{{ link }}" class="text-blue-500 underline">@{{ link }}</a>
-                            </x-body-text>
+                            <x-spacer height="16px" />
                             <x-body-text>
                               Thanks,
                               <br />
@@ -50,7 +43,7 @@ preheader: We heard that you would like to verify your account. Let us help you 
                             <x-divider />
                             <x-body-text>
                               If you have any questions, please don't hesitate to contact us at
-                              <a href="mailto:{{ company.email }}" class="text-blue-500 underline"
+                              <a href="mailto:{{ company.email }}" class="text-sky-500 underline"
                                 >{{ company.email }}</a
                               >
                             </x-body-text>

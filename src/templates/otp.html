@@ -4,7 +4,7 @@ preheader: Here is your One-Time Password (OTP) that you can use to access your 
 ---
 
 <x-main>
-  <div class="font-inter bg-white text-gray-800">
+  <div class="font-inter">
     <table align="center" class="m-0 mx-auto">
       <tr>
         <td class="w-[550px] max-w-full sm:px-3 px-0">
@@ -29,7 +29,7 @@ preheader: Here is your One-Time Password (OTP) that you can use to access your 
                               If you did not request an OTP, please ignore this email. Otherwise,
                               you can use the following OTP to access your account.
                             </x-body-text>
-                            <p class="font-extrabold select-all text-2xl">@{{ otp }}</p>
+                            <p class="font-extrabold text-black select-all text-2xl">@{{ otp }}</p>
                             <x-body-text
                               >This code will be good for the next 5 minutes, so make sure to use it
                               before it expires.</x-body-text
@@ -46,7 +46,7 @@ preheader: Here is your One-Time Password (OTP) that you can use to access your 
                             <x-divider />
                             <x-body-text>
                               If you have any questions, please don't hesitate to contact us at
-                              <a href="mailto:{{ company.email }}" class="text-blue-500 underline"
+                              <a href="mailto:{{ company.email }}" class="text-sky-500 underline"
                                 >{{ company.email }}</a
                               >
                             </x-body-text>
