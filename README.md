@@ -30,6 +30,10 @@ All the templates can be found here in the [`src/templates`](src/templates) dire
 
 To get started, clone this repository with something like [Giget](https://github.com/unjs/giget)(this way you don't have to worry about the git history)
 
+```bash
+npx giget@latest gh:BayBreezy/maizzle-auth-starter-templates email-designs --install
+```
+
 ### Prerequisites
 
 - Node (v18 or higher)
